@@ -29,21 +29,25 @@ var projectThree = {
 var projectArray = [projectOne, projectTwo, projectThree];
 
 projectArray.forEach(project => {
-  var newDiv = $("<div>").addClass("card bg-success margin d-inline-block");
-  var title = $("<h3>").text(project.title);
+  var newDiv = $("<div>").addClass(
+    "card card-gradient margin d-inline-block text-center"
+  );
+  var title = $("<h3>")
+    .text(project.title)
+    .addClass("shadows white");
   var deployed = $("<a>")
     .attr({
       href: project.deployedSource,
       target: "_blank"
     })
-    .addClass("margin d-inline")
+    .addClass("margin d-inline white")
     .text("Deployed Project Page");
   var github = $("<a>")
     .attr({
       href: project.githubSource,
       target: "_blank"
     })
-    .addClass("margin d-inline")
+    .addClass("margin d-inline white")
     .text("GitHub Code");
   newDiv.append(title, deployed, github);
   $("#append-to").append(newDiv);

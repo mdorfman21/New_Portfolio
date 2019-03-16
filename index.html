@@ -7,6 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quattrocento:700|Shadows+Into+Light|ZCOOL+QingKe+HuangYou"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./assets/styles.css" />
@@ -14,16 +28,26 @@
   <body>
     <div class="container">
       <header class="row">
-        <div class="col-md-4">
-          <h2><span>Morgan Dorfman</span></h2>
-          <h6><span>Email: mdorfman21@gmail.com</span></h6>
-          <h6><span>Cell: 908-763-5247</span></h6>
+        <div class="col-md-3"></div>
+        <div class="col-md-6 text-center">
+          <h2><span class="quat">Morgan Dorfman</span></h2>
+          <h5><span class="quat">Email: mdorfman21@gmail.com</span></h5>
+          <h5><span class="quat">Located: Jersey City</span></h5>
+          <h5><span class="quat">Cell: 908-763-5247</span></h5>
+          <button id="resume" class="cool btn btn-outline-light">
+            <i class="far fa-file"></i>
+            Resume
+          </button>
+          <button id="github" class="cool btn btn-outline-light">
+            <i class="fab fa-github-alt"></i>
+            GitHub
+          </button>
+          <button id="linkedin" class="cool btn btn-outline-light">
+            <i class="fab fa-linkedin"></i>
+            LinkedIn
+          </button>
         </div>
-        <div class="col-md-8 text-right">
-          <button id="resume">Resume</button>
-          <button id="github">GitHub</button>
-          <button id="linkedin">LinkedIn</button>
-        </div>
+        <div class="col-md-3"></div>
       </header>
       <div class="row">
         <div class="col-md-12" id="append-to"></div>

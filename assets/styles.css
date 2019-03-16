@@ -2,3 +2,38 @@
   margin: 1%;
   width: 45%;
 }
+
+html {
+  background: url("https://i.pinimg.com/originals/97/05/4f/97054f8c1bff3179813aecdfd2988cdb.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+.shadows {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.cool {
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+}
+
+.quat {
+  font-family: "Quattrocento", serif;
+  color: floralwhite;
+}
+
+.card-gradient {
+  background: linear-gradient(#01262f, #195b69);
+}
+
+.white {
+  color: floralwhite;
+}
+
+.btn-outline-light:focus {
+  box-shadow: none;
+}
+
+body {
+  background-color: transparent;
+}
