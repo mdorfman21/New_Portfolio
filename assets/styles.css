@@ -37,3 +37,27 @@ html {
 body {
   background-color: transparent;
 }
+
+a:hover {
+  color: orange;
+  text-decoration: none;
+  font-weight: none;
+}
+
+.card-img {
+  width: 100px;
+  height: 100px;
+}
+
+p {
+  text-indent: 2em;
+}
+
+.small {
+  width: 18rem;
+  height: 18rem;
+}
+
+.increase {
+  font-size: 1.25rem;
+}
