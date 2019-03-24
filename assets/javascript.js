@@ -54,13 +54,16 @@ projectArray.forEach((project, index) => {
   var title = $("<h2>")
     .text(project.title)
     .addClass("shadows white");
-  var deployed = $("<a>")
-    .attr({
-      href: project.deployedSource,
-      target: "_blank"
-    })
-    .addClass("margin white cool")
-    .text("Deployed Project ");
+  if (project.deployedSource === "") {
+  } else {
+    var deployed = $("<a>")
+      .attr({
+        href: project.deployedSource,
+        target: "_blank"
+      })
+      .addClass("margin white cool")
+      .text("Deployed Project ");
+  }
   var github = $("<a>")
     .attr({
       href: project.githubSource,
