@@ -1,5 +1,5 @@
 $("#resume").on("click", function() {
-  window.open("/assets/images/Morgan Dorfman Résumé.pdf");
+  window.open("./assets/images/Morgan_Dorfman_Resume.pdf");
 });
 
 $("#github").on("click", function() {
