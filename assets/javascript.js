@@ -45,7 +45,36 @@ var projectFour = new Project(
   "https://pbs.twimg.com/profile_images/968293311986323456/z2GIyUZH.jpg"
 );
 
-var projectArray = [projectOne, projectTwo, projectThree, projectFour];
+let projectFive = new Project(
+  "Bamazon Node App",
+  "",
+  "https://github.com/mdorfman21/bamazon",
+  "https://pmcdeadline2.files.wordpress.com/2016/01/bamazon_0.jpg?w=225&h=127&crop=1"
+);
+
+let projectSix = new Project(
+  "Friend Finder",
+  "https://secret-reef-87915.herokuapp.com/",
+  "https://github.com/mdorfman21/FriendFinder",
+  "https://www.consumer.ftc.gov/sites/www.consumer.ftc.gov/files/games/off-site/game-0003_friend-finder_680x360.png"
+);
+
+let projectSeven = new Project(
+  "Queue",
+  "https://intense-springs-15214.herokuapp.com/",
+  "https://github.com/mdorfman21/TheHouseOfAJAX",
+  "https://github.com/mdorfman21/TheHouseOfAJAX/blob/master/views/assets/media/clock.png?raw=true"
+);
+
+var projectArray = [
+  projectOne,
+  projectTwo,
+  projectThree,
+  projectFour,
+  projectFive,
+  projectSix,
+  projectSeven
+];
 
 projectArray.forEach((project, index) => {
   var newDiv = $("<div>").addClass(
