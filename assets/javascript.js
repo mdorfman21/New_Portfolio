@@ -66,6 +66,13 @@ let projectSeven = new Project(
   "https://github.com/mdorfman21/TheHouseOfAJAX/blob/master/views/assets/media/clock.png?raw=true"
 );
 
+const projectEight = new Project(
+  "Memory Game",
+  "https://mdorfman21.github.io/clicky-game/",
+  "https://github.com/mdorfman21/clicky-game",
+  "https://cdn1.medicalnewstoday.com/content/images/articles/320/320804/memory-concept-art.jpg"
+);
+
 var projectArray = [
   projectOne,
   projectTwo,
@@ -73,7 +80,8 @@ var projectArray = [
   projectFour,
   projectFive,
   projectSix,
-  projectSeven
+  projectSeven,
+  projectEight
 ];
 
 projectArray.forEach((project, index) => {
