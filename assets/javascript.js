@@ -73,6 +73,13 @@ const projectEight = new Project(
   "https://cdn1.medicalnewstoday.com/content/images/articles/320/320804/memory-concept-art.jpg"
 );
 
+const projectNine = new Project(
+  "MODO Investments",
+  "https://modo-investments.herokuapp.com",
+  "https://github.com/mdorfman21/project-three-trading",
+  "https://github.com/mdorfman21/project-three-trading/blob/master/client/src/media/logonav.png?raw=true"
+);
+
 var projectArray = [
   projectOne,
   projectTwo,
@@ -81,7 +88,8 @@ var projectArray = [
   projectFive,
   projectSix,
   projectSeven,
-  projectEight
+  projectEight,
+  projectNine
 ];
 
 projectArray.forEach((project, index) => {
