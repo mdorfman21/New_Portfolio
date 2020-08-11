@@ -1,12 +1,12 @@
-$("#resume").on("click", function() {
-  window.open("./assets/images/Morgan_Dorfman_Resume.pdf");
+$("#resume").on("click", function () {
+  window.open("./assets/images/newest_resume.pdf");
 });
 
-$("#github").on("click", function() {
+$("#github").on("click", function () {
   window.open("https://github.com/mdorfman21");
 });
 
-$("#linkedin").on("click", function() {
+$("#linkedin").on("click", function () {
   window.open("https://www.linkedin.com/in/mdorfman21/");
 });
 
@@ -49,7 +49,7 @@ let projectFive = new Project(
   "Bamazon Node App",
   "",
   "https://github.com/mdorfman21/bamazon",
-  "https://pmcdeadline2.files.wordpress.com/2016/01/bamazon_0.jpg?w=225&h=127&crop=1"
+  "https://cdn.lynda.com/course/696328/696328-637286241569827391-16x9.jpg"
 );
 
 let projectSix = new Project(
@@ -70,7 +70,7 @@ const projectEight = new Project(
   "Memory Game",
   "https://mdorfman21.github.io/clicky-game/",
   "https://github.com/mdorfman21/clicky-game",
-  "https://cdn1.medicalnewstoday.com/content/images/articles/320/320804/memory-concept-art.jpg"
+  "https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUjfV5Qebbs7UUmvDGkgdPuvZ3SFl81MTYAo2JPxJcSWmjbXDOYD-lxMPCGuy7ybrv1tpHa_jKKeRw6sAIFM37qdfZGp.jpg?r=779"
 );
 
 const projectNine = new Project(
@@ -89,22 +89,20 @@ var projectArray = [
   projectSix,
   projectSeven,
   projectEight,
-  projectNine
+  projectNine,
 ];
 
 projectArray.forEach((project, index) => {
   var newDiv = $("<div>").addClass(
     "card card-gradient margin d-inline-block text-center"
   );
-  var title = $("<h2>")
-    .text(project.title)
-    .addClass("shadows white");
+  var title = $("<h2>").text(project.title).addClass("shadows white");
   if (project.deployedSource === "") {
   } else {
     var deployed = $("<a>")
       .attr({
         href: project.deployedSource,
-        target: "_blank"
+        target: "_blank",
       })
       .addClass("margin white cool")
       .text("Deployed Project ");
@@ -112,14 +110,14 @@ projectArray.forEach((project, index) => {
   var github = $("<a>")
     .attr({
       href: project.githubSource,
-      target: "_blank"
+      target: "_blank",
     })
     .addClass("margin cool white")
     .text(" GitHub Code");
   var image = $("<img>")
     .attr({
       src: project.imageSource,
-      alt: "image " + (index + 1)
+      alt: "image " + (index + 1),
     })
     .addClass("card-img");
   newDiv.append(title, image, deployed, github);
